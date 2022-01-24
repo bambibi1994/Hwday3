@@ -1,0 +1,47 @@
+body {
+    background-color: #f4f4f4;
+    color: #3a3a3a;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+
+    padding: 10px;
+}
+
+.color-black {
+    padding: 10px;
+    background-color:rgb(158, 103, 103);
+}
+
+.color-red {
+    background-color: red;
+    animation-name: change-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.custom-font1 {
+    font-family: 'Sedgwick Ave', cursive;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.custom-font2 {
+    font-family: 'Dosis', sans-serif;
+}
+
+a:hover {
+    background-color: blue;
+}
+
+@keyframes change-color {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
